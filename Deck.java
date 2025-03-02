@@ -72,7 +72,14 @@ class Deck{
         }
     }
 	//compareCard()
-	
+  	public void compareCard(String rank) {
+        System.out.println("Cards with rank " + rank + ":");
+        for (Card card : deck) {
+            if (card.rank.equalsIgnoreCase(rank)) {
+                System.out.println(card);
+            }
+        }
+    }
 	//find card()
 		
 }
