@@ -5,6 +5,7 @@ class Deck{
 	ArrayList<Card> deck;	//object of card.java, will take rank and suit
 	public Deck(){
 		this.deck = new ArrayList<>();
+		createDeck(); 
 	}
 	
 	// method to create a deck
