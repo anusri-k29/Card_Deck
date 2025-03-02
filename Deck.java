@@ -36,8 +36,8 @@ class Deck{
 	//select 5 random cards from deck
 	public void randomCards() {
         shuffleDeck(); // Shuffle the deck before picking
-        System.out.println(deck.get(0)); //first random card
-        System.out.println(deck.get(1)); //second random card
+	        System.out.println(deck.get(0)); //first random card
+	        System.out.println(deck.get(1)); //second random card
 		System.out.println(deck.get(2));//third random card
 		System.out.println(deck.get(3));//fourth random card
 		System.out.println(deck.get(4));//fifth random card
@@ -63,7 +63,14 @@ class Deck{
     }
 	
 	//sameCard()
-	
+	public void sameCard(String suit) {
+        System.out.println("Cards with suit " + suit + ":");
+        for (Card card : deck) {
+            if (card.suit.equalsIgnoreCase(suit)) {
+                System.out.println(card);
+            }
+        }
+    }
 	//compareCard()
 	
 	//find card()
